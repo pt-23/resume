@@ -1,3 +1,13 @@
+---
+title: "Careers at Placer.ai"
+description: "Join our team and help transform how organizations understand the physical world"
+layout: default
+---
+
+# Careers at Placer.ai
+
+Join our team and help transform how organizations understand the physical world through cutting-edge location intelligence.
+
 ## Open Positions by Department
 
 ### Engineering

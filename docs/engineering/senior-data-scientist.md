@@ -1,7 +1,18 @@
 ---
 title: Senior Data Scientist
 description: Location: New York, NY • Department: Engineering
+layout: default
 ---
+
+<div class="back-button" style="margin-bottom: 20px;">
+  <a href="../jobs" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
+    ← Back to Engineering Jobs
+  </a>
+  <span style="margin: 0 10px; color: #ccc;">|</span>
+  <a href="../" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
+    ← Back to All Open Positions
+  </a>
+</div>
 
 <div style="margin: 20px 0;">
     <a href="https://www.linkedin.com/feed/" class="btn">Apply Now</a>

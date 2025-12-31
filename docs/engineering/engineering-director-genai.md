@@ -1,8 +1,18 @@
 ---
 title: Engineering Director, GenAI Solutions
 description: Location: New York, NY • Department: Engineering
+layout: default
 ---
 
+<div class="back-button" style="margin-bottom: 20px;">
+  <a href="../jobs" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
+    ← Back to Engineering Jobs
+  </a>
+  <span style="margin: 0 10px; color: #ccc;">|</span>
+  <a href="../" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
+    ← Back to All Open Positions
+  </a>
+</div>
 [![Apply Now](https://img.shields.io/badge/Apply%20Now-155799?style=for-the-badge&logo=rocket&logoColor=white)](YOUR_LINK_HERE)
 
 
