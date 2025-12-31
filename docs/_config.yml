@@ -1,2 +1,27 @@
-theme: jekyll-theme-cayman
-description: Join our team
+remote_theme: zerostaticthemes/jekyll-serif-theme
+title: "Placer.ai Careers"
+description: "Join our team at Placer.ai - transforming how organizations understand the physical world"
+url: ""
+baseurl: ""
+
+# Jekyll Serif theme configuration
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "32px"
+
+footer:
+  copyright_text: '© 2024 Placer.ai. All rights reserved.'
+
+seo:
+  meta_og_title: "Placer.ai Careers"
+  meta_og_type: "website"
+  meta_og_description: "Join our team at Placer.ai - transforming how organizations understand the physical world"
+
+collections:
+  jobs:
+    output: true
+    permalink: /:collection/:name/
+
+plugins:
+  - jekyll-environment-variables
