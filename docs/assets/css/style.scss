@@ -1,0 +1,41 @@
+@import "{{ site.theme }}";
+
+// Placer.ai Brand Variables
+$placer-blue: #5E63E3;
+$placer-dark: #333333;
+$placer-light: #F5F5F5;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: $placer-dark;
+  background-color: white;
+}
+
+// CTA Button - Placer Style
+.btn-apply {
+  background-color: $placer-blue;
+  color: #ffffff !important;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 14px 0 rgba(94, 99, 227, 0.39);
+  border: none;
+  text-decoration: none;
+}
+
+.btn-apply:hover {
+  background-color: darken($placer-blue, 10%);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+// Divider styling
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 40px 0;
+}
