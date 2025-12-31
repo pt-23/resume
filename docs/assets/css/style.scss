@@ -11,25 +11,27 @@ body {
   background-color: white;
 }
 
-.btn {
+.btn, 
+.page-header .btn,
+.main-content .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff; // Solid white text instead of transparent
   background-color: $placer-green;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: $placer-green; // Use green border instead of transparent white
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   padding: 0.75rem 1rem; // Default padding for all screen sizes
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 600; // Make text bolder for better visibility
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffff; // Keep solid white on hover
     text-decoration: none;
-    background-color: $placer-green;
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: darken($placer-green, 10%); // Darker green on hover
+    border-color: darken($placer-green, 10%);
   }
 
   + .btn {
