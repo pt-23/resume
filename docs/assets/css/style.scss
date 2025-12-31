@@ -45,6 +45,23 @@ a.btn-apply:active, .btn-apply:active {
   transform: translateY(0) !important;
 }
 
+// CTA Button styling
+.cta-button {
+  background-color: #007bff; /* Example background color */
+  color: #ffffff; /* Text color */
+  padding: 10px 20px; /* Spacing inside the button */
+  text-decoration: none; /* Remove default link underline */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Allows padding and margin */
+  font-weight: bold; /* Make text stand out */
+  margin: 10px 0; /* Add some space around the button */
+  /* Add hover effects for interactivity */
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
 // Divider styling
 hr {
   border: 0;
