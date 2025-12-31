@@ -19,7 +19,8 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <!-- Removed the "View on GitHub" button -->
-       <a href="https://www.linkedin.com/feed/" class="btn-apply">Apply Now</a> 
+       <a href="https://www.linkedin.com/feed/" class="btn">Apply Now</a> 
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
     </header>
 
     <main id="content" class="main-content" role="main">

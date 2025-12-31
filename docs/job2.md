@@ -4,7 +4,7 @@ description: Location: New York, NY • Department: Engineering
 ---
 
 <div style="margin: 20px 0;">
-    <a href="https://www.linkedin.com/feed/" class="btn-apply">Apply Now</a>
+    <a href="https://www.linkedin.com/feed/" class="btn">Apply Now</a>
 </div>
 
 
@@ -73,5 +73,5 @@ You will oversee full-stack development—from LLM integration and agentic workf
 <div style="text-align: center; padding: 40px 0; background: #f9f9f9; border-radius: 12px;">
     <h3>Ready to build the future of location intelligence?</h3>
     <p>Join our team in New York and lead the GenAI revolution.</p>
-    <a href="https://www.linkedin.com/feed/" class="btn">Submit Your Application</a>
+    <a href="https://www.linkedin.com/feed/" class="btn">Submit Your Application<a>
 </div>
