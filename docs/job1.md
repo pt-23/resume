@@ -1,15 +1,10 @@
 ---
 layout: default
 title: Engineering Director, GenAI Solutions
-description: Apply now
+description: Location: New York, NY • Department: Engineering
 ---
 
-# Engineering Director, GenAI Solutions
-**Location:** New York, NY • **Department:** Engineering
-
-<div style="margin: 20px 0;">
-    <a href="YOUR_LINK_HERE" class="btn-apply">Apply Now</a>
-</div>
+[![Apply Now](https://img.shields.io/badge/Apply%20Now-155799?style=for-the-badge&logo=rocket&logoColor=white)](YOUR_LINK_HERE)
 
 
 ## ABOUT PLACER.AI
@@ -74,8 +69,8 @@ You will oversee full-stack development—from LLM integration and agentic workf
 > **Equal Opportunity Employer:** Placer.ai is an equal opportunity employer with a global remote workforce. We are committed to a drug-free workplace and providing reasonable accommodations for applicants with disabilities.
 ---
 
-<div style="text-align: center; padding: 40px 0; background: #f9f9f9; border-radius: 12px;">
-    <h3>Ready to build the future of location intelligence?</h3>
-    <p>Join our team in New York and lead the GenAI revolution.</p>
-    <a href="YOUR_LINK_HERE" class="btn-apply">Submit Your Application</a>
-</div>
+## Ready to build the future of location intelligence?
+
+Join our team in New York and lead the GenAI revolution.
+
+[![Submit Your Application](https://img.shields.io/badge/Submit%20Your%20Application-159957?style=for-the-badge&logo=paper-plane&logoColor=white)](YOUR_LINK_HERE)

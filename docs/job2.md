@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Engineeer , GenAI Solutions
+description: Location: New York, NY • Department: Engineering
 ---
-
-# Engineer Director, GenAI Solutions
-**Location:** Austin, NY • **Department:** Engineering
 
 <div style="margin: 20px 0;">
     <a href="YOUR_LINK_HERE" class="btn-apply">Apply Now</a>

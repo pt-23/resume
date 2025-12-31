@@ -11,25 +11,38 @@ body {
   background-color: white;
 }
 
-// CTA Button - Green to match Cayman theme
-.btn-apply {
-  background: linear-gradient(120deg, #155799, #159957); // Gradient like Cayman theme
-  color: #ffffff !important;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  display: inline-block;
-  transition: transform 0.2s ease, background 0.2s ease;
-  box-shadow: 0 4px 14px 0 rgba(21, 153, 87, 0.39);
-  border: none;
-  text-decoration: none;
+// Alternative button styling - simpler approach
+a.btn-apply, .btn-apply {
+  background: #159957 !important;
+  background: linear-gradient(120deg, #155799, #159957) !important;
+  color: white !important;
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  display: inline-block !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 14px 0 rgba(21, 153, 87, 0.39) !important;
+  border: none !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin: 10px 0 !important;
 }
 
-.btn-apply:hover {
-  background: linear-gradient(120deg, #134e7c, #0d7377);
-  transform: translateY(-2px);
-  text-decoration: none;
+a.btn-apply:hover, .btn-apply:hover {
+  background: #0d7377 !important;
+  background: linear-gradient(120deg, #134e7c, #0d7377) !important;
+  transform: translateY(-2px) !important;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a.btn-apply:visited, .btn-apply:visited {
+  color: white !important;
+}
+
+a.btn-apply:active, .btn-apply:active {
+  transform: translateY(0) !important;
 }
 
 // Divider styling
