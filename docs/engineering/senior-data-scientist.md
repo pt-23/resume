@@ -1,5 +1,5 @@
 ---
-title: Engineeer , GenAI Solutions
+title: Senior Data Scientist
 description: Location: New York, NY • Department: Engineering
 ---
 
