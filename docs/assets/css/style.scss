@@ -1,7 +1,7 @@
 @import "{{ site.theme }}";
 
 // Placer.ai Brand Variables
-$placer-blue: #5E63E3;
+$placer-green: #159957; // Cayman theme green
 $placer-dark: #333333;
 $placer-light: #F5F5F5;
 
@@ -11,23 +11,23 @@ body {
   background-color: white;
 }
 
-// CTA Button - Placer Style
+// CTA Button - Green to match Cayman theme
 .btn-apply {
-  background-color: $placer-blue;
+  background: linear-gradient(120deg, #155799, #159957); // Gradient like Cayman theme
   color: #ffffff !important;
   padding: 16px 32px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.1rem;
   display: inline-block;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 4px 14px 0 rgba(94, 99, 227, 0.39);
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 14px 0 rgba(21, 153, 87, 0.39);
   border: none;
   text-decoration: none;
 }
 
 .btn-apply:hover {
-  background-color: darken($placer-blue, 10%);
+  background: linear-gradient(120deg, #134e7c, #0d7377);
   transform: translateY(-2px);
   text-decoration: none;
 }
