@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Engineering Director, GenAI Solutions
+description: Apply now
 ---
 
 # Engineering Director, GenAI Solutions
