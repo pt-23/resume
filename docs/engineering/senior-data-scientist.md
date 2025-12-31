@@ -1,6 +1,6 @@
 ---
 title: Senior Data Scientist
-description: Location: New York, NY • Department: Engineering
+description: "Location: New York, NY • Department: Engineering"
 layout: default
 ---
 
