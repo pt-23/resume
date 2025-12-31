@@ -10,11 +10,6 @@ title: Engineering Director, GenAI Solutions
     <a href="YOUR_LINK_HERE" class="btn-apply">Apply Now</a>
 </div>
 
----
-# Engineering Director, GenAI Solutions
-**Location:** New York, NY
-
----
 
 ## ABOUT PLACER.AI
 Placer.ai is transforming how organizations understand the physical world. Our location analytics platform provides unprecedented visibility into locations, markets, and consumer behavior. Placer empowers thousands of customers—from Fortune 500 companies to local governments and nonprofits—to make smarter, data-driven decisions.
