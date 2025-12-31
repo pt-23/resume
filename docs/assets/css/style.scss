@@ -25,7 +25,7 @@ body {
   &:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: $placer-green;
     border-color: rgba(255, 255, 255, 0.3);
   }
 

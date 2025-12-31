@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Engineeer , GenAI Solutions
 description: Location: New York, NY • Department: Engineering
 ---

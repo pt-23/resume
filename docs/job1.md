@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Engineering Director, GenAI Solutions
 description: Location: New York, NY • Department: Engineering
 ---
