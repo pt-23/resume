@@ -23,6 +23,11 @@ layout: default
                 {% if page.type %}
                 <span class="job-type">{{ page.type }}</span>
                 {% endif %}
+                {% if page.location %}
+                <span class="job-weather" id="job-weather-inline" data-location="{{ page.location }}">
+                    <span class="weather-loading-inline">Loading...</span>
+                </span>
+                {% endif %}
             </div>
         </div>
         
@@ -59,7 +64,139 @@ layout: default
                         {% endif %}
                     </ul>
                 </div>
+                
+                {% if page.location %}
+                <div class="weather-widget">
+                    <h4>Current Weather</h4>
+                    <div id="weather-info" data-location="{{ page.location }}">
+                        <div class="weather-loading">Loading weather data...</div>
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const weatherInfo = document.getElementById('weather-info');
+    if (!weatherInfo) return;
+    
+    const location = weatherInfo.getAttribute('data-location');
+    if (!location) return;
+    
+    // Configuration from Jekyll data
+    const USE_MOCK_DATA = {{ site.data.weather_config.use_mock_data | default: true }};
+    const API_KEY = "{{ site.data.weather_config.api_key }}";
+    const API_URL = `{{ site.data.weather_config.api_url }}?q=${encodeURIComponent(location)}&appid=${API_KEY}&units=imperial`;
+    
+    fetchWeatherData(location);
+    
+    function fetchWeatherData(location) {
+        if (USE_MOCK_DATA || API_KEY === "your_openweathermap_api_key_here") {
+            // Use mock data for demo
+            setTimeout(() => {
+                const mockWeatherData = generateMockWeather(location);
+                displayWeather(mockWeatherData);
+            }, 1000);
+        } else {
+            // Use real API
+            fetch(API_URL)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    displayWeather(data);
+                })
+                .catch(error => {
+                    console.error('Weather fetch error:', error);
+                    weatherInfo.innerHTML = '<div class="weather-error">Weather data unavailable</div>';
+                    
+                    // Hide inline weather on error
+                    const inlineWeather = document.getElementById('job-weather-inline');
+                    if (inlineWeather) {
+                        inlineWeather.style.display = 'none';
+                    }
+                });
+        }
+    }
+    
+    function generateMockWeather(location) {
+        // Generate realistic mock data based on location
+        const locationData = {
+            'New York, NY': { temp: 45, condition: 'Partly Cloudy' },
+            'San Francisco, CA': { temp: 62, condition: 'Clear' },
+            'Austin, TX': { temp: 72, condition: 'Sunny' },
+            'Seattle, WA': { temp: 50, condition: 'Light Rain' },
+            'Chicago, IL': { temp: 38, condition: 'Cloudy' }
+        };
+        
+        const cityData = locationData[location] || { 
+            temp: Math.floor(Math.random() * 40) + 40, 
+            condition: 'Clear' 
+        };
+        
+        return {
+            name: location.split(',')[0],
+            main: {
+                temp: cityData.temp,
+                feels_like: cityData.temp - 3,
+                humidity: Math.floor(Math.random() * 30) + 40
+            },
+            weather: [{
+                main: cityData.condition,
+                description: 'mock weather data for demo',
+                icon: '01d'
+            }],
+            wind: {
+                speed: Math.floor(Math.random() * 10) + 5
+            }
+        };
+    }
+    
+    function displayWeather(data) {
+        const temp = Math.round(data.main.temp);
+        const feelsLike = Math.round(data.main.feels_like);
+        const condition = data.weather[0].main;
+        const humidity = data.main.humidity;
+        const windSpeed = Math.round(data.wind.speed);
+        
+        // Update main weather widget
+        weatherInfo.innerHTML = `
+            <div class="weather-content">
+                <div class="weather-main">
+                    <span class="weather-temp">${temp}°F</span>
+                    <span class="weather-condition">${condition}</span>
+                </div>
+                <div class="weather-details">
+                    <div class="weather-detail">
+                        <span class="label">Feels like:</span>
+                        <span class="value">${feelsLike}°F</span>
+                    </div>
+                    <div class="weather-detail">
+                        <span class="label">Humidity:</span>
+                        <span class="value">${humidity}%</span>
+                    </div>
+                    <div class="weather-detail">
+                        <span class="label">Wind:</span>
+                        <span class="value">${windSpeed} mph</span>
+                    </div>
+                </div>
+                <div class="weather-note">
+                    <small>${USE_MOCK_DATA ? 'Demo weather data' : 'Live weather data'} for ${data.name}</small>
+                </div>
+            </div>
+        `;
+        
+        // Update inline weather display in job meta
+        const inlineWeather = document.getElementById('job-weather-inline');
+        if (inlineWeather) {
+            inlineWeather.innerHTML = `${temp}°F`;
+        }
+    }
+});
+</script>

@@ -3,7 +3,7 @@ title: "Senior Data Scientist"
 description: "Build advanced machine learning models and analytics solutions that power location intelligence for thousands of businesses worldwide"
 layout: job
 department: Engineering
-location: "New York, NY"
+location: "San Francisco, CA"
 type: "Full-time"
 experience: "5+ years"
 excerpt: "Join our data science team to develop cutting-edge ML models and analytics solutions that transform location data into actionable business insights."

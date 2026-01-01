@@ -1,0 +1,11 @@
+# Weather API Configuration
+# Set use_mock_data to false and add your OpenWeatherMap API key for real data
+use_mock_data: true
+api_key: "36d251e58c3547dd3144450cb7cb33eb"
+api_url: "https://api.openweathermap.org/data/2.5/weather"
+
+# Instructions:
+# 1. Sign up for free at https://openweathermap.org/api
+# 2. Get your API key
+# 3. Replace "your_openweathermap_api_key_here" with your actual key
+# 4. Set use_mock_data to false

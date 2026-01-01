@@ -3,7 +3,7 @@ title: "Content Marketing Specialist"
 description: "Create compelling content that showcases the power of location intelligence across multiple channels"
 layout: job
 department: Marketing
-location: "New York, NY"
+location: "Austin, TX"
 type: "Full-time"
 experience: "3+ years"
 excerpt: "Join our marketing team to create engaging content that educates our audience about location intelligence and drives brand awareness."

@@ -97,3 +97,137 @@
     }
   }
 }
+
+// Weather widget styles
+.weather-widget {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  
+  h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+  }
+}
+
+.weather-loading {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+.weather-content {
+  .weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    .weather-temp {
+      font-size: 24px;
+      font-weight: bold;
+      color: #155799;
+    }
+    
+    .weather-condition {
+      font-size: 14px;
+      color: #666;
+      text-transform: capitalize;
+    }
+  }
+  
+  .weather-details {
+    margin-bottom: 8px;
+    
+    .weather-detail {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+      font-size: 13px;
+      
+      .label {
+        color: #666;
+      }
+      
+      .value {
+        color: #333;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .weather-note {
+    text-align: center;
+    color: #999;
+    font-size: 11px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e9ecef;
+  }
+}
+
+.weather-error {
+  color: #dc3545;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+// Inline weather display in job meta
+.job-weather {
+  background: #e8f4fd;
+  color: #1976d2;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  border: 1px solid #bbdefb;
+  
+  .weather-loading-inline {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+// Ensure job meta items have proper spacing
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  span {
+    display: inline-block;
+  }
+  
+  .job-department,
+  .job-location,
+  .job-type {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .job-department {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+  
+  .job-location {
+    background: #f3e5f5;
+    color: #7b1fa2;
+  }
+  
+  .job-type {
+    background: #e8f5e8;
+    color: #2e7d32;
+  }
+}

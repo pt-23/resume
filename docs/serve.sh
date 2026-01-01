@@ -7,4 +7,4 @@ echo "Site will be available at: http://localhost:4000"
 echo "Press Ctrl+C to stop the server"
 echo ""
 
-bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload
+bundle exec jekyll serve --config _config.yml,_config_dev.yml --host 0.0.0.0 --port 4000
