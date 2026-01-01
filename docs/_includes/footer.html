@@ -1,0 +1,35 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>{{ site.company.name }}</h3>
+                <p>{{ site.company.tagline }}</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="{{ '/engineering/jobs' | relative_url }}">Engineering</a></li>
+                        <li><a href="{{ '/sales/jobs' | relative_url }}">Sales</a></li>
+                        <li><a href="{{ '/marketing/jobs' | relative_url }}">Marketing</a></li>
+                        <li><a href="{{ '/accounting/jobs' | relative_url }}">Accounting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://www.placer.ai" target="_blank">About Us</a></li>
+                        <li><a href="https://www.placer.ai/contact" target="_blank">Contact</a></li>
+                        <li><a href="https://www.placer.ai/blog" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>{{ site.footer.copyright_text }}</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="hero-section">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="{{ '/assets/images/placer-logo.svg' | relative_url }}" alt="Placer.ai" class="logo-image">
+                </div>
+                <h1 class="hero-title">{{ page.title }}</h1>
+                <p class="hero-description">{{ page.description }}</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">$100M+</span>
+                        <span class="stat-label">Annual Revenue</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$1B+</span>
+                        <span class="stat-label">Valuation</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Customers</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#open-positions" class="btn btn-primary btn-large">View Open Positions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jobs-list" id="open-positions">
+    <div class="container">
+        <div class="section-header">
+            <h2>Open Positions</h2>
+            <p>Join our team and help transform how organizations understand the physical world</p>
+        </div>
+        
+        <div class="jobs-content">
+            {{ content }}
+            
+            {% assign all_jobs = site.jobs %}
+            
+            {% if all_jobs.size > 0 %}
+            <div class="jobs-by-department">
+                {% assign departments = site.jobs | map: "department" | uniq | sort %}
+                {% for department in departments %}
+                    {% assign dept_jobs = site.jobs | where: "department", department %}
+                    {% if dept_jobs.size > 0 %}
+                    <div class="department-section">
+                        <h3 class="department-title">{{ department }}</h3>
+                        <div class="jobs-grid">
+                            {% for job in dept_jobs %}
+                            <div class="job-card">
+                                <div class="job-card-header">
+                                    <h4 class="job-card-title">
+                                        <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
+                                    </h4>
+                                    <div class="job-card-meta">
+                                        {% if job.location %}
+                                        <span class="job-location">{{ job.location }}</span>
+                                        {% endif %}
+                                        {% if job.type %}
+                                        <span class="job-type">{{ job.type }}</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                
+                                {% if job.excerpt %}
+                                <div class="job-card-excerpt">
+                                    {{ job.excerpt | strip_html | truncatewords: 25 }}
+                                </div>
+                                {% endif %}
+                                
+                                <div class="job-card-footer">
+                                    <a href="{{ job.url | relative_url }}" class="btn btn-outline">View Details</a>
+                                    {% if job.experience %}
+                                    <span class="job-experience">{{ job.experience }}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="no-jobs">
+                <p>We're always looking for talented individuals. Check back soon for new opportunities!</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

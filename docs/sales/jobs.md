@@ -1,21 +1,8 @@
 ---
-title: Sales Jobs
-description: Open positions in the Sales department
-layout: default
+title: "Sales Jobs"
+description: "Join our sales team and help businesses discover the power of location intelligence"
+layout: jobs-list
+department: Sales
 ---
 
-<div class="back-button" style="margin-bottom: 20px;">
-  <a href="../" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
-    ← Back to All Open Positions
-  </a>
-</div>
-
-# Sales Department - Open Positions
-
-## Current Openings
-
-*No open positions at this time. Check back soon!*
-
----
-
-*Looking for opportunities in other departments? Check out our [main careers page](../)*
+Drive growth by helping businesses unlock the power of location intelligence. Our sales team works with Fortune 500 companies, retailers, and organizations worldwide to transform how they understand their markets and customers.

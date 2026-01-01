@@ -1,21 +1,9 @@
 ---
 title: "Careers at Placer.ai"
-description: "Join our team and help transform how organizations understand the physical world"
-layout: default
+description: "Join our team and help transform how organizations understand the physical world through cutting-edge location intelligence"
+layout: home
 ---
 
-# Careers at Placer.ai
+We're building the future of location intelligence. Join our team of passionate engineers, data scientists, and innovators who are transforming how organizations understand the physical world.
 
-Join our team and help transform how organizations understand the physical world through cutting-edge location intelligence.
-
-## Open Positions by Department
-
-### Engineering
-* [View all Engineering positions](./engineering/jobs)
-* [Engineering Director, GenAI Solutions](./engineering/engineering-director-genai)
-* [Senior Data Scientist](./engineering/senior-data-scientist)
-
-### Other Departments
-* [Sales](./sales/jobs)
-* [Accounting](./accounting/jobs)
-* [Marketing](./marketing/jobs)
+At Placer.ai, you'll work with cutting-edge technology, collaborate with brilliant minds, and make a real impact on businesses worldwide.

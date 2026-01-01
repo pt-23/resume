@@ -1,22 +1,8 @@
 ---
-title: Engineering Jobs
-description: Open positions in the Engineering department
-layout: default
+title: "Engineering Jobs"
+description: "Join our engineering team and build the future of location intelligence"
+layout: jobs-list
+department: Engineering
 ---
 
-<div class="back-button" style="margin-bottom: 20px;">
-  <a href="../" style="display: inline-flex; align-items: center; text-decoration: none; color: #666; font-size: 14px;">
-    ← Back to All Open Positions
-  </a>
-</div>
-
-# Engineering Department - Open Positions
-
-## Current Openings
-
-* [Engineering Director, GenAI Solutions](./engineering-director-genai)
-* [Senior Data Scientist](./senior-data-scientist)
-
----
-
-*Looking for opportunities in other departments? Check out our [main careers page](../)*
+Build cutting-edge location intelligence solutions that power insights for thousands of businesses worldwide. Our engineering team works with massive datasets, advanced analytics, and modern technologies to solve complex problems at scale.

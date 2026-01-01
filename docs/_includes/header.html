@@ -1,0 +1,26 @@
+<header class="site-header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="{{ '/' | relative_url }}" class="brand-link">
+                    <span class="brand-name">{{ site.company.name }}</span>
+                </a>
+            </div>
+            
+            <div class="navbar-nav">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                    All Jobs
+                </a>
+                <a href="{{ '/engineering/jobs' | relative_url }}" class="nav-link {% if page.url contains '/engineering/' %}active{% endif %}">
+                    Engineering
+                </a>
+                <a href="{{ '/sales/jobs' | relative_url }}" class="nav-link {% if page.url contains '/sales/' %}active{% endif %}">
+                    Sales
+                </a>
+                <a href="{{ '/marketing/jobs' | relative_url }}" class="nav-link {% if page.url contains '/marketing/' %}active{% endif %}">
+                    Marketing
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
