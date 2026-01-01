@@ -1,7 +1,7 @@
 title: "Placer.ai Careers"
 description: "Join our team at Placer.ai - transforming how organizations understand the physical world"
-url: ""
-baseurl: ""
+url: "https://pt-23.github.io"
+baseurl: "/resume"
 
 # Site configuration
 logo: "images/logo/logo.svg"
@@ -24,6 +24,16 @@ collections:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# GitHub Pages settings
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
 
 # Theme settings inspired by Ashby
 theme_settings:
