@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="jobs-list">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="page-description">{{ page.description }}</p>
+            {% endif %}
+        </div>
+        
+        <div class="jobs-content">
+            {{ content }}
+            
+            {% assign filtered_jobs = site.jobs %}
+            {% if page.department %}
+                {% assign filtered_jobs = site.jobs | where: "department", page.department %}
+            {% endif %}
+            
+            {% if filtered_jobs.size > 0 %}
+            <div class="jobs-grid">
+                {% for job in filtered_jobs %}
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3 class="job-card-title">
+                            <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
+                        </h3>
+                        <div class="job-card-meta">
+                            {% if job.department %}
+                            <span class="job-department">{{ job.department }}</span>
+                            {% endif %}
+                            {% if job.location %}
+                            <span class="job-location">{{ job.location }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    {% if job.excerpt %}
+                    <div class="job-card-excerpt">
+                        {{ job.excerpt | strip_html | truncatewords: 30 }}
+                    </div>
+                    {% endif %}
+                    
+                    <div class="job-card-footer">
+                        <a href="{{ job.url | relative_url }}" class="btn btn-outline">View Details</a>
+                        {% if job.type %}
+                        <span class="job-type">{{ job.type }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="no-jobs">
+                <p>No open positions in this department at the moment. Check back soon!</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

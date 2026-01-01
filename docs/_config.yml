@@ -1,11 +1,13 @@
-remote_theme: zerostaticthemes/jekyll-serif-theme
 title: "Placer.ai Careers"
 description: "Join our team at Placer.ai - transforming how organizations understand the physical world"
 url: ""
 baseurl: ""
 
-# Jekyll Serif theme configuration
+# Site configuration
 logo: "images/logo/logo.svg"
+company:
+  name: "Placer.ai"
+  tagline: "Transforming how organizations understand the physical world"
 
 footer:
   copyright_text: '© 2024 Placer.ai. All rights reserved.'
@@ -22,4 +24,13 @@ collections:
 
 plugins:
   - jekyll-environment-variables
-  - jekyll-remote-theme
+
+# Theme settings inspired by Ashby
+theme_settings:
+  primary_color: "#2563eb"
+  secondary_color: "#1e40af"
+  accent_color: "#3b82f6"
+  text_color: "#1f2937"
+  light_text_color: "#6b7280"
+  background_color: "#ffffff"
+  light_background: "#f9fafb"
